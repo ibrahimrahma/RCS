@@ -16,10 +16,18 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/contact', function () {
-    return view('contact');
+Route::get('/home', function () {
+    return view('home');
 });
 Route::get('/gallery', function () {
     return view('gallery');
+ });
+Route::get('/carts', function () {
+    return view('carts');
+}); 
+Route::get('/menu', function () {
+    return view('menu');
 });
-
+Route::get('/cart', function () {
+    return view('place your order');
+});
